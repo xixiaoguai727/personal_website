@@ -812,3 +812,37 @@ li {
 
 
 
+/* =========================
+   Mobile layout
+   ========================= */
+
+   @media (max-width: 768px) {
+
+    .prototype-card {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 16px;
+    }
+  
+    .prototype-copy {
+      width: 100%;
+      min-width: 0;
+    }
+  
+    .image-slot {
+      width: 100%;
+      max-width: 100%;
+      justify-self: stretch;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .image-slot img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+  
+  }
