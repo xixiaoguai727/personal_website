@@ -4,349 +4,291 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Xi Zheng | Academic Homepage</title>
-    <link rel="icon" 
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍉</text></svg>">    <meta
+    <meta
       name="description"
-      content="Personal academic website."
+      content="Xi Zheng is a Ph.D. candidate in Computer Science at City University of Hong Kong researching emotionally meaningful and empathetic human-AI interaction."
     />
-
-    <!-- Optional: nicer link previews -->
     <meta property="og:title" content="Xi Zheng | Academic Homepage" />
     <meta property="og:type" content="website" />
-
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🍉</text></svg>' />
     <link rel="stylesheet" href="styles.css" />
-
     <script src="https://unpkg.com/lucide@latest"></script>
-
   </head>
-
   <body>
-    <a class="skip-link" href="#about">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="page-root">
-      <div class="background-gradients" aria-hidden="true">
-        <div class="bg-orb orb-1"></div>
-        <div class="bg-orb orb-2"></div>
-        <div class="bg-orb orb-3"></div>
-      </div>
+    <div class="site-frame">
+      <nav class="mobile-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="prototypes.html">Research Prototypes</a>
+        <a href="cat.html">Cat</a>
+      </nav>
 
-      <header class="site-header">
-        <div class="header-inner">
-          <div class="brand">
-            <div class="brand-text">
-              <span class="brand-name">Xi Zheng</span>
+      <aside class="sidebar" aria-label="Profile sidebar">
+        <div class="sidebar-inner">
+          <a class="sidebar-brand" href="index.html">Xi Zheng</a>
+          <img class="profile-photo" src="images/photo.jpg" alt="Portrait of Xi Zheng" />
+          <p class="sidebar-role">
+            Ph.D. Candidate in Computer Science<br />
+            BiWell Lab<br />
+            City University of Hong Kong
+          </p>
+          <a class="email-link" href="mailto:zheng.xi@my.cityu.edu.hk">zheng.xi@my.cityu.edu.hk</a>
+
+          <div class="sidebar-section">
+            <h2>Links</h2>
+            <div class="quick-links">
+              <a href="https://scholar.google.com/citations?user=iJ-Vet4AAAAJ&hl=en" target="_blank" rel="me noopener noreferrer">
+                <i data-lucide="graduation-cap"></i>
+                Google Scholar
+              </a>
+              <a href="https://orcid.org/0009-0001-3702-9689" target="_blank" rel="me noopener noreferrer">
+                <i data-lucide="id-card"></i>
+                ORCID
+              </a>
+              <a href="cv.html">
+                <i data-lucide="file-user"></i>
+                CV
+              </a>
             </div>
           </div>
 
-          <nav class="nav" aria-label="Primary">
-            <a href="#about">About</a>
-            <a href="#news">News</a>
-            <a href="#publications">Publications</a>
-            <a href="#education">Education</a>
-            <a href="#work">Work</a>
-            <a href="#service">Service</a>
-          </nav>
-        </div>
-      </header>
-
-      <main class="page-main">
-        <div class="layout-shell">
-          <aside class="sidebar" aria-label="Profile sidebar">
-            <div class="sidebar-inner">
-              <div class="sidebar-photo">
-                <div class="hero-photo-outer">
-                  <div class="hero-photo-inner">
-                    <img src="photo.jpg" alt="Portrait of Xi" decoding="async" fetchpriority="high" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="sidebar-name">Xi Zheng</div>
-
-              <div class="sidebar-role">
-                Ph.D. Candidate, <br />
-                City University of Hong Kong
-              </div>
-
-              <div class="sidebar-email">
-                <a href="mailto:zheng.xi@my.cityu.edu.hk">
-                  zheng.xi@my.cityu.edu.hk
-                </a>
-              </div>
-
-              <div class="sidebar-section">
-                <h2>Research keywords</h2>
-                <ul class="pill-list">
-                  <li>AI for Health and Wellbeing</li>
-                <li>Multimodal Interaction</li>
-                  <li>Visual Communication</li>
-
-                </ul>
-              </div>
-
-              <div class="sidebar-section">
-                <h2>Quick links</h2>
-                <div class="link-row">
-              
-                  <a href="https://scholar.google.com/citations?user=iJ-Vet4AAAAJ&hl=en"
-                     target="_blank"
-                     rel="me noopener noreferrer">
-                    <i data-lucide="graduation-cap"></i>
-                    Google Scholar
-                  </a>
-              
-                  <a href="https://orcid.org/0009-0001-3702-9689"
-                     target="_blank"
-                     rel="me noopener noreferrer">
-                    <i data-lucide="id-card"></i>
-                    ORCID
-                  </a>
-              
-                  <a href="https://yuhanlolo.github.io/me/lab.html"
-                     target="_blank"
-                     rel="me noopener noreferrer">
-                    <i data-lucide="home"></i>
-                    Lab
-                  </a>
-              
-                  <a href="Tianfu.JPG"
-                     download="Tianfu.JPG">
-                    <i data-lucide="cat"></i>
-                    Cat
-                  </a>
-              
-                </div>
-              </div>
-
-
-
-            </div>
-          </aside>
-
-          <div class="content-stack">
-            <section id="about" class="panel">
-              <div class="panel-inner">
-                <div class="section-header">
-                  <h2>About Me</h2>
-                </div>
-                <div class="section-body">
-                  <p>
-                    Hi! My name is Xi Zheng, and I am a Ph.D. candidate in the Department of Computer Science at the BiWell Lab, City
-                    University of Hong Kong, supervised by
-                    <a href="https://yuhanlolo.github.io/me/index.html", target="_blank", rel="me noopener noreferrer">
-                      Dr. Yuhan Luo
-                    </a>. <br /> <br />
-                    My research interests include human–AI interaction for health and wellbeing, and multimodal
-                    human–AI interaction.<br /><br />
-                    Before starting my Ph.D. in HCI at CityU, I was trained in mathematics and statistics. I received my undergraduate degree, majoring in Mathematics and Statistics, from the University of Toronto, 
-                    and my master’s degree in Statistics from the National University of Singapore.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section id="news" class="panel">
-              <div class="panel-inner">
-                <div class="section-header">
-                  <h2>News</h2>
-                </div>
-                <div class="section-body">
-                  <ul class="simple-list">
-                    <li><time datetime="2026">2026</time> — One paper is accepted by IMWUT 2026.</li>
-                    <li><time datetime="2025">2025</time> — One paper is accepted by DIS 2025.</li>
-                    <li><time datetime="2025">2025</time> — One paper is accepted by CHI 2025.</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section id="publications" class="panel">
-              <div class="panel-inner">
-                <div class="section-header">
-                  <h2>Publications</h2>
-                </div>
-            
-                <!-- AI for Health -->
-                <div class="pub-group">
-                  <h3 class="pub-group-title">AI for Health and Well-being</h3>
-            
-                  <div class="pub-list">
-                    <article class="pub-item">
-                      <div class="pub-meta">
-                        <span class="pub-year">2025</span>
-                        <span class="pub-venue">CHI</span>
-                      </div>
-                      <div class="pub-content">
-                        <h3>
-                          Customizing Emotional Support: How Do Individuals Construct and Interact With LLM-Powered Chatbots
-                        </h3>
-                        <p class="pub-authors">
-                          <strong>Xi Zheng</strong>, Zhuoyang Li, Xinning Gui, Yuhan Luo
-                        </p>
-                        <div class="pub-actions">
-                          <a class="pub-link"
-                             href="chi25-chatlab-zheng.pdf"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            PDF
-                          </a>
-                          <a class="pub-link secondary"
-                             href="https://dl.acm.org/doi/10.1145/3706598.3713453"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            DOI
-                          </a>
-                        </div>
-                      </div>
-                    </article>
-
-                    <article class="pub-item">
-                      <div class="pub-meta">
-                        <span class="pub-year">2025</span>
-                        <span class="pub-venue">DIS</span>
-                      </div>
-                      <div class="pub-content">
-                        <h3>
-                          Reflecting Upon the Unintended Consequences of Personal Informatics Systems: A Systematic Review of Empirical Studies
-                        </h3>
-                        <p class="pub-authors">
-                          Yuhan Luo, Xinning Gui, Xianghua (Sharon) Ding, <strong>Xi Zheng</strong>, Rie Helene (Lindy) Hernandez, Zhuoyang Li, Qiurong Song
-                        </p>
-                        <div class="pub-actions">
-                          <a class="pub-link"
-                             href="dis25-reflectingPI-luo.pdf"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            PDF
-                          </a>
-                          <a class="pub-link secondary"
-                             href="https://dl.acm.org/doi/10.1145/3715336.3735746"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            DOI
-                          </a>
-                        </div>
-                      </div>
-                    </article>
-
-                  </div>
-                </div>
-            
-                <!-- Visual Communication -->
-                <div class="pub-group">
-                  <h3 class="pub-group-title">Visual Communication in AI and Technology</h3>
-            
-                  <div class="pub-list">
-
-                    <article class="pub-item">
-                      <div class="pub-meta">
-                        <span class="pub-year">2026</span>
-                        <span class="pub-venue">IMWUT</span>
-                      </div>
-                      <div class="pub-content">
-                        <h3>
-                          Visualizing Power Mode: The Impact of Battery-Saving Indicators on User Behavior During Intensive Mobile Interactions
-                        </h3>
-                        <p class="pub-authors">
-                          Chenhao Hong, <strong>Xi Zheng</strong>, Minhui Liang, Junqiao Qiu, Yuhan Luo
-                        </p>
-                        <div class="pub-actions">
-                          <a class="pub-link"
-                             href="imwut26-power-hong.pdf"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            PDF
-                          </a>
-                          <a class="pub-link secondary"
-                             href="https://doi.org/10.1145/3789684"
-                             target="_blank"
-                             rel="noopener noreferrer">
-                            DOI
-                          </a>
-                        </div>
-                      </div>
-                    </article>
-
-
-                  </div>
-                </div>
-            
-              </div>
-            </section>
-
-            <section id="education" class="panel">
-              <div class="panel-inner">
-                <div class="section-header">
-                  <h2>Education</h2>
-                </div>
-                <div class="section-body">
-                  <ul class="simple-list">
-                    <li>2024.09 – Now · Ph.D., Computer Science, City University of Hong Kong</li>
-                    <li>2022.08 – 2024.01 · M.Sc., Statistics, National University of Singapore</li>
-                    <li>2018.09 – 2022.06 · B.Sc., Double Majors in Mathematics and Statistics, Minor in Computer Science, University of Toronto</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section id="work" class="panel">
-              <div class="panel-inner">
-                <div class="section-header">
-                  <h2>Work</h2>
-                </div>
-                <div class="section-body">
-                  <ul class="simple-list">
-                    <li>2024.03 – 2024.09 · Research Assistant, BiWell Lab, City University of Hong Kong</li>
-                    <li>2023.09 – 2023.12 · Data Scientist Intern, Decision Science, Bayer, Beijing, China</li>
-                    <li>2021.06 – 2021.08 · Data Analyst Intern, Infrastructure Solutions Group, Lenovo, Beijing, China</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          <!-- Teaching -->
-          <section id="teaching" class="panel">
-            <div class="panel-inner">
-              <div class="section-header">
-                <h2>Teaching</h2>
-              </div>
-              <div class="section-body">
-                <ul class="simple-list">
-                  <li>CS1102: Introduction to Computer Studies —  Teaching Assistant, Fall 2024, Fall 2025</li>
-                  <li>CS3334: Data Structures —  Teaching Assistant, Winter 2025</li>
-                  <li>CS2204: Fundamentals of Internet Applications Development —  Teaching Assistant, Winter 2026</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <!-- Academic Service -->
-          <section id="service" class="panel">
-            <div class="panel-inner">
-              <div class="section-header">
-                <h2>Academic Service</h2>
-              </div>
-              <div class="section-body">
-                <ul class="simple-list">
-                  <li>Reviewer: CHI 2025 LBW, CHI 2025 Student Competition,  PervasiveHealth 2025 Late Track, CHI 2026 Full Paper, CHI 2026 LBW</li>
-                  <li>Workshop: “Customizing LLM-Powered Chatbots”, Hong Kong International AI Art Festival, 2025</li>
-                  <li>Student Volunteer, GBA Pre-CHI 2025</li>
-                  <li>Student Volunteer Chair, GBA Pre-CHI 2024</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+          <div class="sidebar-section">
+            <h2>News & Travel</h2>
+            <ul class="news-list">
+              <li><span>🔍</span> Looking for potential exchange programs, industry opportunities, and research collaborations.</li>
+              <li><span>🌆</span> 2026.10 · Attending ACM UbiComp, Shanghai, China.</li>
+              <li><span>🥘</span> 2026.04 · Attending ACM CHI, Barcelona, Spain.</li>
+              <li><span>🤖</span> 2025.12 · Attending Hong Kong AI Festival.</li>
+              <li><span>🍣</span> 2025.04 · Attending ACM CHI, Yokohama, Japan.</li>
+              <li><span>🍍</span> 2024.05 · Attending ACM CHI, Hawaii, USA.</li>
+            </ul>
           </div>
         </div>
-      </main>
+      </aside>
 
-      <footer class="site-footer">
-        <div class="footer-inner">
+      <main id="main" class="main-content">
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="prototypes.html">Research Prototypes</a>
+          <a href="cat.html">Cat</a>
+        </nav>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow pink">About</p>
+            <h2>Hi, I am Xi.</h2>
+          </div>
+          <div class="rich-text">
+            <p>
+              I am a Ph.D. candidate in the Department of Computer Science at the BiWell Lab, City University of Hong Kong, supervised by <a href="https://yuhanlolo.github.io/me/index.html" target="_blank" rel="me noopener noreferrer">Prof. Yuhan Luo</a>.
+            </p>
+            <p>
+              Before starting my Ph.D., I received my M.Sc. in Statistics from the National University of Singapore and my B.Sc. from the University of Toronto, with double majors in Mathematics and Statistics and a minor in Computer Science.
+            </p>
+            <p>
+              My research lies at the intersection of human-AI interaction, health and well-being, and multimodal conversational experiences. Below, I share some of my current research directions.
+            </p>
+
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow purple">Current Research Directions</p>
+          </div>
+
+          <div class="research-list">
+            <article class="research-item">
+              <div class="research-copy">
+                <span class="item-number">01</span>
+                <h3>How do people interact with AI for emotional support?</h3>
+                <p>
+                  As AI becomes increasingly embedded in everyday life, more and more people are turning to it for emotional
+                  support and even developing romantic relationships with AI. My research examines how people customize AI
+                  for these emotionally meaningful interactions, what behaviors AI exhibits in these interactions, and how people
+                  interpret and respond to these behaviors. Across this body of work, I aim to better understand how people
+                  experience and make sense of emotionally meaningful interactions with AI, and to translate these insights into
+                  the design of systems that better support their emotional needs.                </p>
+                <a href="publications.html#c1">Related work: [C1]</a>
+              </div>
+              <div class="research-figure figure-pink">
+                  <img src="images/dr1.png" alt="Human-AI interaction" />
+              </div>
+            </article>
+
+            <article class="research-item">
+              <div class="research-copy">
+                <span class="item-number">02</span>
+                <h3>How can AI be designed to express empathy appropriately?</h3>
+                <p>
+                  Empathetic communication becomes increasingly important as conversational AI is integrated into health and
+                  well-being contexts, where users may seek not only information but also reassurance, understanding, and emo-
+                  tional support. My research investigates how people perceive and respond to empathy expressed by AI through
+                  multimodal cues, how these perceptions vary across contexts, and how multimodal conversational experiences
+                  can be designed to communicate empathy more effectively. Across this body of work, I aim to understand how
+                  different forms of multimodal expression can be appropriately designed across interaction contexts.                </p>
+                <a href="publications.html#m1">Related work: [M1], [EA1]</a>
+              </div>
+              <div class="research-figure figure-purple">
+                <img src="images/dr2.png" alt="Multimodal interaction" />
+
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow yellow">Education</p>
+          </div>
+        
+          <div class="timeline">
+        
+            <article class="timeline-item">
+              <span class="time">Sep. 2024 — Present</span>
+        
+              <div class="education-info">
+                <h3>Ph.D. in Computer Science</h3>
+                <p class="institution">City University of Hong Kong</p>
+                <p class="education-note">Supervisor: Prof. Yuhan Luo</p>
+              </div>
+            </article>
+        
+            <article class="timeline-item">
+              <span class="time">Aug. 2022 — Jan. 2024</span>
+        
+              <div class="education-info">
+                <h3>M.Sc. in Statistics</h3>
+                <p class="institution">National University of Singapore</p>
+              </div>
+            </article>
+        
+            <article class="timeline-item">
+              <span class="time">Sep. 2018 — Jun. 2022</span>
+        
+              <div class="education-info">
+                <h3>B.Sc. in Mathematics and Statistics</h3>
+                <p class="institution">University of Toronto</p>
+                <p class="education-note">Minor in Computer Science</p>
+              </div>
+            </article>
+        
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow green">Work Experience</p>
+          </div>
+        
+          <div class="timeline">
+        
+            <article class="timeline-item">
+              <span class="time">Mar. 2024 — Sep. 2024</span>
+        
+              <div class="work-info">
+                <h3>Research Assistant</h3>
+                <p class="institution">BiWell Lab, City University of Hong Kong</p>
+                <p class="work-note">Hong Kong SAR</p>
+              </div>
+            </article>
+        
+            <article class="timeline-item">
+              <span class="time">Sep. 2023 — Dec. 2023</span>
+        
+              <div class="work-info">
+                <h3>Data Scientist Intern</h3>
+                <p class="institution">Decision Science, Bayer</p>
+                <p class="work-note">Beijing, China</p>
+              </div>
+            </article>
+        
+            <article class="timeline-item">
+              <span class="time">Jun. 2021 — Aug. 2021</span>
+        
+              <div class="work-info">
+                <h3>Data Analyst Intern</h3>
+                <p class="institution">Infrastructure Solutions Group, Lenovo</p>
+                <p class="work-note">Beijing, China</p>
+              </div>
+            </article>
+        
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow green">Teaching</p>
+          </div>
+          <ul class="grouped-list">
+            <li>
+              <strong>Lab Tutor</strong>
+              <span>CS1102: Introduction to Computer Studies, Fall 2026</span>
+            </li>
+            <li>
+              <strong>Teaching Assistant</strong>
+              <span>
+                CS2204: Fundamentals of Internet Applications Development, Winter 2026<br />
+                CS3334: Data Structures, Winter 2025<br />
+                CS1102: Introduction to Computer Studies, Fall 2024, Fall 2025
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow yellow">Awards</p>
+          </div>
+          <ul class="clean-list">
+            <li>2025 · Outstanding Academic Performance Award, City University of Hong Kong</li>
+            <li>2024 · Excellent Service Award, Greater Bay Area HCI Community</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <p class="eyebrow pink">Academic Service</p>
+          </div>
+          <ul class="grouped-list">
+            <li>
+              <strong>Conference Reviewer</strong>
+              <span>ACM CHI 2026 Full Papers, ACM CHI 2025-2026 Late-Breaking Work, ACM CHI 2025 Student Research Competition, PervasiveHealth 2025 Late Track</span>
+            </li>
+            <li>
+              <strong>Journal Reviewer</strong>
+              <span>Cyberpsychology</span>
+            </li>
+            <li>
+              <strong>Student Volunteer Chair</strong>
+              <span>Greater Bay Area Pre-CHI 2024</span>
+            </li>
+            <li>
+              <strong>Student Volunteer</strong>
+              <span>Greater Bay Area Pre-CHI 2025</span>
+            </li>
+            <li>
+              <strong>Workshop</strong>
+              <span>Customizing LLM-Powered Chatbots, Hong Kong International AI Art Festival 2025</span>
+            </li>
+            <li>
+              <strong>Student Mentor</strong>
+              <span>STEM Challenge 2024, City University of Hong Kong</span>
+            </li>
+          </ul>
+        </section>
+
+
+        <footer class="site-footer">
           <span>© <span id="year"></span> Xi Zheng</span>
-        </div>
-      </footer>
+          <span>Last updated September 2026</span>
+        </footer>
+      </main>
     </div>
 
     <script src="main.js"></script>
   </body>
 </html>
-

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research Prototypes | Xi Zheng</title>
+    <meta
+      name="description"
+      content="Research prototypes by Xi Zheng, including ChatLab and a multimodal empathetic chatbot experiment platform."
+    />
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🍉</text></svg>' />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-frame">
+      <nav class="mobile-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="prototypes.html" aria-current="page">Research Prototypes</a>
+        <a href="cat.html">Cat</a>
+      </nav>
+
+      <aside class="sidebar" aria-label="Profile sidebar">
+        <div class="sidebar-inner">
+          <a class="sidebar-brand" href="index.html">Xi Zheng</a>
+          <img class="profile-photo" src="images/photo.jpg" alt="Portrait of Xi Zheng" />
+          <p class="sidebar-role">
+            Ph.D. Candidate in Computer Science<br />
+            BiWell Lab<br />
+            City University of Hong Kong
+          </p>
+          <a class="email-link" href="mailto:zheng.xi@my.cityu.edu.hk">zheng.xi@my.cityu.edu.hk</a>
+
+          <div class="sidebar-section">
+            <h2>Links</h2>
+            <div class="quick-links">
+              <a href="https://scholar.google.com/citations?user=iJ-Vet4AAAAJ&hl=en" target="_blank" rel="me noopener noreferrer">
+                <i data-lucide="graduation-cap"></i>
+                Google Scholar
+              </a>
+              <a href="https://orcid.org/0009-0001-3702-9689" target="_blank" rel="me noopener noreferrer">
+                <i data-lucide="id-card"></i>
+                ORCID
+              </a>
+              <a href="cv.html">
+                <i data-lucide="file-user"></i>
+                CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main" class="main-content">
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="prototypes.html" aria-current="page">Research Prototypes</a>
+          <a href="cat.html">Cat</a>
+        </nav>
+
+        <section class="intro-section compact-intro">
+          <p class="eyebrow yellow">Research Prototypes</p>
+          <h1>Research Prototypes</h1>
+          <p class="lead small">
+            Interfaces and experimental platforms built for field studies, controlled experiments, and public engagement.
+          </p>
+        </section>
+
+        <section class="content-section">
+          <article class="prototype-card">
+            <div class="prototype-copy">
+              <p class="eyebrow pink">Prototype 01</p>
+              <h2>ChatLab: Customizable LLM-Powered Chatbot Interface</h2>
+              <p>
+                Designed and implemented a web-based LLM chatbot interface supporting customizable personas and multimodal communication.
+              </p>
+              <p>
+                ChatLab was deployed in a one-week longitudinal field study with 22 participants and was later extended into ChatLab 2.0 for a public interactive workshop at the Hong Kong International AI Art Festival 2025.
+              </p>
+              <div class="tag-row">
+                <span>Customizable personas</span>
+                <span>Multimodal interaction</span>
+              </div>
+              <a class="button-link" href="publications.html#c1">
+                <i data-lucide="arrow-up-right"></i>
+                Related publication: C1
+              </a>
+            </div>
+
+            <div class="image-slot">
+              <img src="images/chatlab.png" alt="chatlab" />
+            </div>
+          </article>
+        </section>
+
+        <section class="content-section">
+          <article class="prototype-card">
+            <div class="prototype-copy">
+              <p class="eyebrow purple">Prototype 02</p>
+              <h2>Multimodal Empathetic Chatbot Experiment Platform</h2>
+              <p>
+                Developed an end-to-end web-based experimental platform for studying multimodal empathetic interactions with chatbots.
+              </p>
+              <p>
+                The platform integrated condition-specific verbal and visual empathy generation and automated participant consent, experimental condition progression, chatbot interactions, evaluations, and data collection.
+              </p>
+              <div class="tag-row">
+                <span>Experimental workflow</span>
+                <span>Multimodal empathy expression</span>
+              </div>
+              <a class="button-link" href="publications.html#m1">
+                <i data-lucide="arrow-up-right"></i>
+                Related publication: M1
+              </a>
+            </div>
+
+            <div class="image-slot">
+              <img src="images/empathy.png" alt="Experiment paltform" />
+
+            </div>
+          </article>
+        </section>
+
+        <footer class="site-footer">
+          <span>© <span id="year"></span> Xi Zheng</span>
+          <span>Last updated September 2026</span>
+        </footer>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
