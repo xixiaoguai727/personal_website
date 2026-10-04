@@ -13,6 +13,34 @@
       yearEl.textContent = String(new Date().getFullYear());
     }
 
+    const lastUpdated = document.querySelector("[data-last-updated]");
+    if (lastUpdated) {
+      const showModifiedDate = (value) => {
+        const modified = new Date(value);
+        if (Number.isNaN(modified.getTime())) return;
+
+        const year = modified.getFullYear();
+        const month = String(modified.getMonth() + 1).padStart(2, "0");
+        lastUpdated.dateTime = `${year}-${month}`;
+        lastUpdated.textContent = modified.toLocaleDateString("en-US", {
+          month: "long",
+          year: "numeric",
+        });
+      };
+
+      if (window.location.protocol === "file:") {
+        showModifiedDate(document.lastModified);
+      } else {
+        // Missing server metadata must not turn the visit date into an update date.
+        fetch(window.location.href, { method: "HEAD", cache: "no-cache" })
+          .then((response) => {
+            const modified = response.headers.get("Last-Modified");
+            if (response.ok && modified) showModifiedDate(modified);
+          })
+          .catch(() => {});
+      }
+    }
+
     if (window.lucide?.createIcons) {
       window.lucide.createIcons();
     }
